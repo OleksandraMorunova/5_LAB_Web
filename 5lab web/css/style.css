@@ -135,9 +135,9 @@
 #lines_our_services {
     position: absolute;
     height: 0px;
-    top: 42px;
+    top: 52px;
     width: 125px;
-    size: 2px;
+    size: 4px;
     background:#767E86;
     transform: rotate(0.02deg);
 }
