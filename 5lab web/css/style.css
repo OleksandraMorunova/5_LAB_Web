@@ -1,0 +1,240 @@
+.header {
+	position: absolute;
+    width: 100%;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    background: #5C5C60;
+}
+
+#text_test_task {
+	position: absolute;
+    width: 110px;
+    height: 26px;
+    left: 320px;
+    top: 19px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+
+    background: linear-gradient(to top, #999696, #FFFFFF);
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent; 
+}
+
+#text_template {
+   position: absolute;
+   width: 60px;
+   height: 18px;
+   left: 320px;
+   top: 50px;
+
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 18px;
+
+    background: linear-gradient(to top, #999696, #FFFFFF);
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent; 
+}
+
+.header_phone {
+    position: absolute;
+    width: 100%;
+    height: 348px;
+    left: 0px;
+    top: 90px;
+
+    background: radial-gradient(37.21% 37.21% at 50% 95.83%, 
+        rgba(255, 255, 255, 0.63) 0%, 
+        rgba(255, 255, 255, 0) 100%), 
+        radial-gradient(50% 50% at 50% 0%, 
+        rgba(255, 255, 255, 0.64) 0%, 
+        rgba(255, 255, 255, 0) 100%), #91D9ED;
+}
+
+#phone {
+    position: absolute;
+    width: 235px;
+    height: 316px;
+    left: 320px;
+    top: 32px;
+}
+#ios_text {
+    position: absolute;
+    width: 292px;
+    height: 46px;
+    left: 720px;
+    top: 95px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+#text_ios_lorem {
+    position: absolute;
+    width: 445px;
+    height: 40px;
+    left: 720px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #608DAD;
+}
+
+#ios_button {
+   position: absolute;
+   height: 38px;
+   width: 146px;
+   left: 720px;
+   top: 228px;
+
+   background: #71ADD8;
+   border: 0 !important;
+   outline: none !important;
+}
+
+.header_our_services {
+    position: absolute;
+    width: 100%;
+    height: 363px;
+    left: 0px;
+    top: 438px;
+
+    background: #FFFFFF;
+}
+
+#text_our_services {
+    position: absolute;
+    width: 322px;
+    height: 68px;
+    left: 566px;
+    top: 27px;
+
+    font-family: Phetsarath;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 68px;
+
+    color: #767E86;
+}
+
+#lines_our_services {
+    position: absolute;
+    height: 0px;
+    top: 42px;
+    width: 125px;
+    size: 2px;
+    background:#767E86;
+    transform: rotate(0.02deg);
+}
+
+#icons {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 120px;
+}
+
+#text_our_services_heading {
+    position: absolute;
+    width: 90px;
+    height: 22px;
+    top: 215px;
+
+    font-family: Phetsarath;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #4D7CCD;
+}
+
+#text_our_services_lorem {
+    position: absolute;
+    width: 210px;
+    height: 53px;
+    top: 250px;
+
+    font-family: Phetsarath;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+
+    color: #767E86;
+}
+
+#our_services_button {
+    position: absolute;
+    width: 100px;
+    height: 26px;
+    top: 310px;
+
+    color: #D0DADF;
+    background: #3B6EC6;
+    border: 0 !important;
+    outline: none !important;
+}
+
+.header_about {
+    position: absolute;
+    width: 100%;
+    height: 545px;
+    left: -5px;
+    top: 801px;
+
+    background: #D1CFCF;
+}
+
+#text_about {   
+    position: absolute;
+    width: 165px;
+    height: 71px;
+    left: 647px;
+    top: 35px;
+
+    font-family: Phetsarath;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 49px;
+    line-height: 71px;
+
+    color: #767E86;
+}
+
+#lines_about {
+    position: absolute;
+    width: 125px;
+    height: 0px;
+    top: 60px;
+    size: 2px;
+    background: #767E86;
+
+    transform: rotate(0.02deg);
+}
+
+.header_close {
+    position: absolute;
+    width: 100%;
+    height: 114px;
+    left: 0px;
+    top: 1346px;
+
+    background: #000000;
+}
