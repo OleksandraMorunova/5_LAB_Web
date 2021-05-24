@@ -4,172 +4,437 @@ body {
 }
 
 .container {
-    max-width: 1200px !important;
+  max-width: 970px !important;
 }
 
-carousel-indicators li{ background: #96BCE8;  border:1px solid #96BCE8;}
-.carousel-indicators li.active{background:#2966B8;}
+carousel-indicators li {
+  background: #96bce8;
+  border: 1px solid #96bce8;
+}
+.carousel-indicators li.active {
+  background: #2966b8;
+}
 
-
-@media (min-width: 1400px) {.carousel-indicators {
-position: absolute;
-left: 500px;
-}} 
-
-@media (min-width: 1400px) {.carousel-inner,.carousel,.item,.container {
- position:absolute;
- height: 348px;
- width: 100%;
- right: 0;
- background-position:center center;
- background-size:cover;
-}}
-
-@media (max-width: 1399px) {.carousel-inner,.carousel,.item,.container {
- position:absolute;
- height: 348px;
- width: 100%;
- right: 0;
- background-position:center center;
- background-size:cover;
-}}
+@media (min-width: 1400px) {
+  .carousel-indicators {
+    position: absolute;
+    left: 500px;
+  }
+}
 
 .header {
-    width: 100%;
-    height: 90px;
-    position: relative;
-    background: #5C5C60;
+  width: 100%;
+  height: 90px;
+  position: relative;
+  background: #5c5c60;
 }
 
 .header_container {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 #text {
-    font-family: Roboto;
-    background: linear-gradient(to top, #999696, #FFFFFF);
-   -webkit-background-clip: text; 
-   -webkit-text-fill-color: transparent; 
+  font-family: Roboto;
+  background: linear-gradient(to top, #999696, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header_phone {
-    position: relative;
-    width: 100%;
-    height: 348px;
-    background: radial-gradient(37.21% 37.21% at 50% 95.83%, 
-        rgba(255, 255, 255, 0.63) 0%, 
-        rgba(255, 255, 255, 0) 100%), 
-        radial-gradient(50% 50% at 50% 0%, 
-        rgba(255, 255, 255, 0.64) 0%, 
-        rgba(255, 255, 255, 0) 100%), #91D9ED;
+  position: relative;
+  width: 100%;
+  height: 348px;
+  background: radial-gradient(
+      37.21% 37.21% at 50% 95.83%,
+      rgba(255, 255, 255, 0.63) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      50% 50% at 50% 0%,
+      rgba(255, 255, 255, 0.64) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #91d9ed;
 }
 
-.second_header_phone {
-    position: relative;
-    width: 100%;
-    height: 348px;
-    background: radial-gradient(37.21% 37.21% at 50% 95.83%, 
-        rgba(255, 255, 255, 0.63) 0%, 
-        rgba(255, 255, 255, 0) 100%), 
-        radial-gradient(50% 50% at 50% 0%, 
-        rgba(255, 255, 255, 0.64) 0%, 
-        rgba(255, 255, 255, 0) 100%), #D1D353;
-}
-
-.third_header_phone {
-    position: relative;
-    width: 100%;
-    height: 348px;
-    background: radial-gradient(37.21% 37.21% at 50% 95.83%, 
-        rgba(255, 255, 255, 0.63) 0%, 
-        rgba(255, 255, 255, 0) 100%), 
-        radial-gradient(50% 50% at 50% 0%, 
-        rgba(255, 255, 255, 0.64) 0%, 
-        rgba(255, 255, 255, 0) 100%), #53D360;
+@media (max-width: 330px) {
+  .header_phone {  
+   height: 200px;
+  }
 }
 
 .phone {
-    position: relative;
-    display: block;
-    margin-top: 35px;
-    object-fit: cover; 
-    object-position: bottom; 
+  position: relative;
+  display: block;
+  margin-top: 35px;
+  object-fit: cover;
+  object-position: bottom;
 }
 
-@media (max-width: 580px) {.phone img{
-    width:80%; 
-    }}
+@media (max-width: 580px) {
+  .phone img {
+    width: 80%;
+  }
+}
 
 .ios_text {
-    font-family: Roboto;
-    font-size: 37px;
-    line-height: 46px;
-    color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 37px;
+  line-height: 46px;
+  color: #ffffff;
 }
 
-@media (max-width: 770px) {.ios_text{
+@media (max-width: 770px) {
+  .ios_text {
     font-size: 33px;
-}}
+  }
+}
 
-@media (max-width: 490px) {.ios_text{
-    font-size: 25px;
-}}
 
-@media (max-width: 380px) {.text_ios_lorem{
-    font-size: 20px;
-}}
+@media (max-width: 500px) {
+  .ios_text {
+    font-size: 17px;
+  }
+}
 
 .text_ios_lorem {
-    font-family: Roboto;
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 19px;
-    color: #608DAD;
+  font-family: Roboto;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #608dad;
 }
 
-@media (max-width: 770px) {.text_ios_lorem{
+@media (max-width: 770px) {
+  .text_ios_lorem {
     font-size: 10px;
-}}
+  }
+}
 
-@media (max-width: 490px) {.text_ios_lorem{
-    font-size: 8px;
-}}
-
-@media (max-width: 390px) {.text_ios_lorem{
-    font-size: 7px;
-}}
+@media (max-width: 490px) {
+  .text_ios_lorem {
+    font-size: 5px;
+  }
+}
 
 .ios_button {
-   border: 0;
-   border-radius: 0;
-   font-family: Roboto;
-
-   font-weight: 300;
-   padding: 12px 60px;
-   font-size: 16px;
-   margin-top: 30px;
-   background: #71ADD8;
-   border: 0 !important;
-   outline: none !important;
+  border: 0;
+  border-radius: 0;
+  font-family: Roboto;
+  font-weight: 300;
+  padding: 12px 60px;
+  font-size: 16px;
+  margin-top: 30px;
+  background: #71add8;
+  border: 0 !important;
+  outline: none !important;
 }
 
-@media (max-width: 770px) {.ios_button{
-    
-}}
+@media (max-width: 490px) {
+  .ios_button {
+    padding: 8px 30px;
+    font-size: 12px;
+  }
+}
 
-@media (max-width: 490px) {.ios_button{
-    padding: 8px 40px;
-    font-size: 16px;
-
-}}
 .margin_top_text {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
-.header_service {
-    width: 100%;
-    height: 363px;
-    position: relative;
-    background: #FFFFFF;
+
+@media (max-width: 510px) {
+  .margin_top_text {  
+  margin-top: 20px;
+  }
+}
+
+.header_services {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  background: #FFFFFF;
+}
+
+#services_title {
+  font-family: Phetsarath;
+  color: #4D7CCD;
+  margin-top: 20px;
+  margin-bottom: 23px;
+}
+
+@media (max-width: 350px) {
+  #services_title {
+    font-size: 10px;
+  }
+}
+
+#services_text {
+  font-family: Phetsarath;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+@media (max-width: 470px) {
+  #services_text{
+    font-size: 7px;
+  }
+}
+
+.services_button {
+  border: 0;
+  border-radius: 0;
+  font-family: Roboto;
+  font-weight: 200;
+  padding: 8px 40px;
+  font-size: 16px;
+  background: #3B6EC6;
+  color: #FFFFFF;
+}
+
+
+@media (max-width: 537px) {
+  .services_button {
+      padding: 3px 10px;
+    font-size: 8px;
+  }
+}
+
+.margin-top-title {
+  margin-top: 30px;
+}
+
+h2 > span {
+  position: relative;
+  padding: 0 15px;
+  display: inline-block;
+}
+
+h2 > span:before, h2 > span:after {
+  content: "";
+  width: 220px;
+  border-top: 3px solid;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  background: #767E86;
+  margin-top: -2px;
+}
+
+h2 > span:after {
+  left: 100%;
+}
+
+@media (max-width: 800px){
+  h2 > span:before, h2 > span:after {
+    width: 40%;
+  }
+}
+
+.header_about {
+  width: 100%;
+  position: relative;
+  height: 630px;
+  background: #D1CFCF;
+}
+
+@media (max-width: 510px) {
+  .header_about {
+     height: 500px;
+  }
+}
+
+.header_about_img img{
+  position: relative;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+#title {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: Phetsarath;
+  font-size: 49px;
+  line-height: 71px;
+  color: #767E86;
+}
+
+#title1 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: Phetsarath;
+  font-size: 40px;
+  line-height: 71px;
+  color: #767E86;
+}
+
+@media (max-width: 500px){
+  #title {
+    font-size: 30px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 500px){
+  #title1 {
+    font-size: 20px;
+  }
+}
+
+#test_task_about {
+  font-family: Phetsarath;
+  font-size: 32px;
+  line-height: 39px;
+  color: #767E86;
+}
+
+#lorem_about {
+  margin-top: 20px;
+  font-family: Phetsarath;
+  font-size: 15.8px;
+  line-height: 16px;
+  color: #767E86; 
+  text-align: justify;
+}
+
+ @media (max-width: 990px){
+  #lorem_about {
+     font-size: 10.8px;
+  }
+}
+
+@media (max-width: 670px){
+  #lorem_about {
+     font-size: 8.8px;
+  }
+}
+
+@media (max-width: 570px){
+  #lorem_about {
+     font-size: 6.8px;
+  }
+}
+
+@media (max-width: 430px){
+  #lorem_about {
+     font-size: 4.8px;
+  }
+}
+
+@media (max-width: 320px){
+  #lorem_about {
+     font-size: 3.8px;
+  }
+}
+
+#skills {
+  margin-top: 60px;
+  font-family: Phetsarath;
+  font-size: 27px;
+  line-height: 39px;
+  color: #3F7BB8;
+}
+
+@media (max-width: 900px) {
+  #skills {
+    margin-top: 5px;
+  }
+}
+
+.skills-block {
+  font-family: Phetsarath;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+#skills_html {
+  background: linear-gradient(270deg, #838284 8.29%, 
+    rgba(255, 255, 255, 0) 8.3%, 
+    rgba(255, 255, 255, 0) 24.28%), #3F7BB8;  
+  margin-top: 20px;
+  display: flex;
+  height: 35px;
+  align-items: center;
+}
+
+#skills_css {
+  background: linear-gradient(270deg, #838284 4.21%, 
+    rgba(255, 255, 255, 0) 4.22%, 
+    rgba(255, 255, 255, 0) 18.74%), #3F7BB8;
+  display: flex;
+  margin-top: 20px; 
+  height: 35px;
+  align-items: center;
+}
+
+#skills_photo {
+  background: linear-gradient(270deg, #838284 13.68%, 
+    rgba(255, 255, 255, 0) 13.69%, 
+    rgba(255, 255, 255, 0) 28.32%), #3F7BB8; 
+  display: flex;
+  margin-top: 20px;
+  height: 35px;
+  align-items: center;
+}
+
+#skills_ilustr {  
+  background: linear-gradient(270deg, #838284 16.45%, 
+    rgba(255, 255, 255, 0) 16.45%, 
+    rgba(255, 255, 255, 0) 30.39%), #3F7BB8; 
+  display: flex;
+  margin-top: 20px;
+  height: 35px;
+  align-items: center;
+}
+
+@media (max-width: 330px) {
+  #skills_ilustr {
+   font-size: 11px;
+  }
+}
+
+.about_input {
+  font-family: Phetsarath;
+  font-size: 14px;
+  color: #AEAAB2;
+}
+
+#input-top {
+  margin-top: 30px;
+}
+
+#input-second-top {
+  margin-top: 9px;
+}
+
+.about_form_input {
+  width: 98%;
+  position: absolute;
+  font-family: Phetsarath;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .about_form_input {
+  width: 95%;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 114px;
+  background: #FFFFFF;
+}
+
+#text_footer {
+  margin-top: 45px;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: Phetsarath;
+  color: #97949B;
 }
