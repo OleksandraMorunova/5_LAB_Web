@@ -3,97 +3,87 @@
 <head>
 	<title>Web page</title>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <link href="bootstrap/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<style type = "text/css">	
-    body {
-        overflow-x: hidden;
-    }
-.carousel-inner,.carousel,.item,.container {
- position:absolute;
- height: 355px;
- width: 73px;
- left:490px;
- background-position:center center;
- background-size:cover;
-}
-
-.slide-wrapper{display: inline;}
-.slide-wrapper .container{padding: 0px;}
-
-.carousel-indicators{
-position: absolute;
-height: 20px;
-right: 10px; 
-}
-
-.carousel-indicators li{ background: #96BCE8;  border:1px solid #96BCE8;}
-.carousel-indicators li.active{background:#2966B8;}
-
+<style type = "text/css">
 </style>
 <body>
-
-    <div class="header">
-	    <font id="text_test_task">TEST TASK</font>
-	    <font id="text_template">template</font>
+  <div class = "container" >
+    <div class="header" style="background: #5C5C60;">
+      <div class="header_container">           
+	      <font id="text" style=" font-size: 21px; line-height: 26px;">TEST TASK</font>
+	      <p id="text" style="font-size: 15px; line-height: 28px;">template</p>               
+      </div>
     </div>
+  </div>
 
-    <div class="header_phone">
-    	<img id="phone" src="https://i.imgur.com/nm2KXzx.png">
-    	<font id="ios_text">IOS apps for free</font>
-    	<font id="text_ios_lorem" style="top: 162px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</font>
-    	<font id="text_ios_lorem" style="top: 183px;">Morbi faucibus augue vitae est volutpat eleifend.</font>
-    	<button id="ios_button" style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 16px; line-height: 19px;"><font style="background: linear-gradient(to top, #D0DADF, #FFFFFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">more info</font></button>
-    	<section class="slide-wrapper">
+  <div class="container-fluid">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-bs-interval="2000" data-bs-pause="false">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="header_phone">
             <div class="container">
-                <div id="myCarousel" class="carousel slide">
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="item item1 active">
-                        </div>
-                        <div class="item item2"></div>
-                        <div class="item item3"></div>
+              <div class="row row-cols-2">
+                <div class="phone"><img src="https://i.imgur.com/KoKDbZ4.png"></div>
+                  <div class="margin_top_text">
+                    <div class="ios_text">IOS apps for free</div>
+                    <div class="text_ios_lorem">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Morbi faucibus augue vitae est volutpat eleifend.
                     </div>
-                </div>
+                    <button class="ios_button"><font style="background: linear-gradient(to top, #D0DADF, #FFFFFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">more info</font>
+                    </button>
+                  </div>
+              </div>   
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="item">
+          <div class="second_header_phone">
+             <div class="container">
+              <div class="row row-cols-2">
+                <div class="col phone"><img src="https://i.imgur.com/KoKDbZ4.png"></div>
+                  <div class="col margin_top_text">
+                    <div class="col ios_text">
+                      IOS apps for free
+                    </div>
+                    <div class="col text_ios_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Morbi faucibus augue vitae est volutpat eleifend.</div>
+                      <button class=" col ios_button"><font style="background: linear-gradient(to top, #D0DADF, #FFFFFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">more info</font>
+                      </button>
+                    </div>
+                        </div> 
+                </div>
+              </div>
+      </div>
+    
+      <div class="item">
+             <div class="third_header_phone">
+                <div class="container">
+               <div class="row row-cols-2">
+                    <div class="col phone"><img src="https://i.imgur.com/KoKDbZ4.png"></div>
+                    <div class="col margin_top_text">
+                      <div class="col ios_text">IOS apps for free</div>
+                      <div class="col text_ios_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Morbi faucibus augue vitae est volutpat eleifend.</div>
+                      <button class=" col ios_button"><font style="background: linear-gradient(to top, #D0DADF, #FFFFFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">more info</font>
+                      </button>
+                    </div>
+                      </div>   
+                </div>
+              </div>
+      </div>
     </div>
-
-    <div class="header_our_services">
-    	<font id="text_our_services">OUR SERVICES</font>
-    	<hr  id="lines_our_services" style="left: 417px;">
-    	<hr id="lines_our_services" style="left: 905px;">
-    	<img id="icons" src="https://i.imgur.com/2zDA5W6.png" style="position: absolute; left: 440px;">
-    	<img id="icons" src="https://i.imgur.com/uX3Olrh.png" style="position: absolute; left: 695px;">
-    	<img id="icons" src="https://i.imgur.com/SH8XTs8.png" style="position: absolute; left: 940px;">
-    	<font id="text_our_services_heading" style="position: absolute; left: 442px;">HEADING 1</font>
-    	<font id="text_our_services_heading" style="position: absolute; left: 695px;">HEADING 2</font>
-    	<font id="text_our_services_heading" style="position: absolute; left: 940px;">HEADING 3</font>
-
-    	<font id="text_our_services_lorem" style="position: absolute; left: 368px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae est volutpat eleifend.</font>
-    	<font id="text_our_services_lorem" style="position: absolute; left: 619px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae est volutpat eleifend.</font>
-    	<font id="text_our_services_lorem" style="position: absolute; left:865px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae est volutpat eleifend.</font>
-
-    	<button id="our_services_button" style="position: absolute; left: 430px;">more info</button>
-    	<button id="our_services_button" style="position: absolute; left: 680px;">more info</button>
-    	<button id="our_services_button" style="position: absolute; left: 927px;">more info</button>
-    </div>
-    <div class="header_about">	
-    	<font id="text_about">ABOUT</font>
-    	<hr id="lines_about" style="left:830px">
-    	<hr id="lines_about" style="left:507px">
-    </div>
-
+ 
+  </div>
+</div>
 </body>
 </html>
+

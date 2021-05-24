@@ -1,55 +1,61 @@
+body {
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px !important;
+}
+
+carousel-indicators li{ background: #96BCE8;  border:1px solid #96BCE8;}
+.carousel-indicators li.active{background:#2966B8;}
+
+
+@media (min-width: 1400px) {.carousel-indicators {
+position: absolute;
+left: 500px;
+}} 
+
+@media (min-width: 1400px) {.carousel-inner,.carousel,.item,.container {
+ position:absolute;
+ height: 348px;
+ width: 100%;
+ right: 0;
+ background-position:center center;
+ background-size:cover;
+}}
+
+@media (max-width: 1399px) {.carousel-inner,.carousel,.item,.container {
+ position:absolute;
+ height: 348px;
+ width: 100%;
+ right: 0;
+ background-position:center center;
+ background-size:cover;
+}}
+
 .header {
-	position: absolute;
     width: 100%;
     height: 90px;
-    left: 0px;
-    top: 0px;
+    position: relative;
     background: #5C5C60;
 }
 
-#text_test_task {
-	position: absolute;
-    width: 110px;
-    height: 26px;
-    left: 320px;
-    top: 19px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 21px;
-    line-height: 26px;
-
-    background: linear-gradient(to top, #999696, #FFFFFF);
-   -webkit-background-clip: text; 
-   -webkit-text-fill-color: transparent; 
+.header_container {
+    padding: 30px 0;
 }
 
-#text_template {
-   position: absolute;
-   width: 60px;
-   height: 18px;
-   left: 320px;
-   top: 50px;
-
-   font-family: Roboto;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 15px;
-   line-height: 18px;
-
+#text {
+    font-family: Roboto;
     background: linear-gradient(to top, #999696, #FFFFFF);
    -webkit-background-clip: text; 
    -webkit-text-fill-color: transparent; 
 }
 
 .header_phone {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 348px;
-    left: 0px;
-    top: 90px;
-
     background: radial-gradient(37.21% 37.21% at 50% 95.83%, 
         rgba(255, 255, 255, 0.63) 0%, 
         rgba(255, 255, 255, 0) 100%), 
@@ -58,183 +64,112 @@
         rgba(255, 255, 255, 0) 100%), #91D9ED;
 }
 
-#phone {
-    position: absolute;
-    width: 235px;
-    height: 316px;
-    left: 320px;
-    top: 32px;
+.second_header_phone {
+    position: relative;
+    width: 100%;
+    height: 348px;
+    background: radial-gradient(37.21% 37.21% at 50% 95.83%, 
+        rgba(255, 255, 255, 0.63) 0%, 
+        rgba(255, 255, 255, 0) 100%), 
+        radial-gradient(50% 50% at 50% 0%, 
+        rgba(255, 255, 255, 0.64) 0%, 
+        rgba(255, 255, 255, 0) 100%), #D1D353;
 }
-#ios_text {
-    position: absolute;
-    width: 292px;
-    height: 46px;
-    left: 720px;
-    top: 95px;
 
+.third_header_phone {
+    position: relative;
+    width: 100%;
+    height: 348px;
+    background: radial-gradient(37.21% 37.21% at 50% 95.83%, 
+        rgba(255, 255, 255, 0.63) 0%, 
+        rgba(255, 255, 255, 0) 100%), 
+        radial-gradient(50% 50% at 50% 0%, 
+        rgba(255, 255, 255, 0.64) 0%, 
+        rgba(255, 255, 255, 0) 100%), #53D360;
+}
+
+.phone {
+    position: relative;
+    display: block;
+    margin-top: 35px;
+    object-fit: cover; 
+    object-position: bottom; 
+}
+
+@media (max-width: 580px) {.phone img{
+    width:80%; 
+    }}
+
+.ios_text {
     font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 37px;
     line-height: 46px;
     color: #FFFFFF;
 }
 
-#text_ios_lorem {
-    position: absolute;
-    width: 445px;
-    height: 40px;
-    left: 720px;
+@media (max-width: 770px) {.ios_text{
+    font-size: 33px;
+}}
 
+@media (max-width: 490px) {.ios_text{
+    font-size: 25px;
+}}
+
+@media (max-width: 380px) {.text_ios_lorem{
+    font-size: 20px;
+}}
+
+.text_ios_lorem {
     font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+    margin-top: 10px;
     font-size: 14px;
+    font-weight: 300;
     line-height: 19px;
     color: #608DAD;
 }
 
-#ios_button {
-   position: absolute;
-   height: 38px;
-   width: 146px;
-   left: 720px;
-   top: 228px;
+@media (max-width: 770px) {.text_ios_lorem{
+    font-size: 10px;
+}}
 
+@media (max-width: 490px) {.text_ios_lorem{
+    font-size: 8px;
+}}
+
+@media (max-width: 390px) {.text_ios_lorem{
+    font-size: 7px;
+}}
+
+.ios_button {
+   border: 0;
+   border-radius: 0;
+   font-family: Roboto;
+
+   font-weight: 300;
+   padding: 12px 60px;
+   font-size: 16px;
+   margin-top: 30px;
    background: #71ADD8;
    border: 0 !important;
    outline: none !important;
 }
 
-.header_our_services {
-    position: absolute;
+@media (max-width: 770px) {.ios_button{
+    
+}}
+
+@media (max-width: 490px) {.ios_button{
+    padding: 8px 40px;
+    font-size: 16px;
+
+}}
+.margin_top_text {
+    margin-top: 100px;
+}
+
+.header_service {
     width: 100%;
     height: 363px;
-    left: 0px;
-    top: 438px;
-
+    position: relative;
     background: #FFFFFF;
-}
-
-#text_our_services {
-    position: absolute;
-    width: 322px;
-    height: 68px;
-    left: 566px;
-    top: 27px;
-
-    font-family: Phetsarath;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 45px;
-    line-height: 68px;
-
-    color: #767E86;
-}
-
-#lines_our_services {
-    position: absolute;
-    height: 0px;
-    top: 52px;
-    width: 125px;
-    size: 4px;
-    background:#767E86;
-    transform: rotate(0.02deg);
-}
-
-#icons {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 120px;
-}
-
-#text_our_services_heading {
-    position: absolute;
-    width: 90px;
-    height: 22px;
-    top: 215px;
-
-    font-family: Phetsarath;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
-
-    color: #4D7CCD;
-}
-
-#text_our_services_lorem {
-    position: absolute;
-    width: 210px;
-    height: 53px;
-    top: 250px;
-
-    font-family: Phetsarath;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-
-    color: #767E86;
-}
-
-#our_services_button {
-    position: absolute;
-    width: 100px;
-    height: 26px;
-    top: 310px;
-
-    color: #D0DADF;
-    background: #3B6EC6;
-    border: 0 !important;
-    outline: none !important;
-}
-
-.header_about {
-    position: absolute;
-    width: 100%;
-    height: 545px;
-    left: -5px;
-    top: 801px;
-
-    background: #D1CFCF;
-}
-
-#text_about {   
-    position: absolute;
-    width: 165px;
-    height: 71px;
-    left: 647px;
-    top: 35px;
-
-    font-family: Phetsarath;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 49px;
-    line-height: 71px;
-
-    color: #767E86;
-}
-
-#lines_about {
-    position: absolute;
-    width: 125px;
-    height: 0px;
-    top: 60px;
-    size: 2px;
-    background: #767E86;
-
-    transform: rotate(0.02deg);
-}
-
-.header_close {
-    position: absolute;
-    width: 100%;
-    height: 114px;
-    left: 0px;
-    top: 1346px;
-
-    background: #000000;
 }
