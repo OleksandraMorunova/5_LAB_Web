@@ -1,4 +1,4 @@
-body {
+html,body {
   padding: 0;
   overflow-x: hidden;
 }
@@ -264,7 +264,7 @@ h2 > span:after {
     rgba(255, 255, 255, 0) 24.28%), #3F7BB8;  
   margin-top: 20px;
   display: flex;
-  height: 35px;
+  height: auto;
   align-items: center;
 }
 
@@ -274,7 +274,7 @@ h2 > span:after {
     rgba(255, 255, 255, 0) 18.74%), #3F7BB8;
   display: flex;
   margin-top: 20px; 
-  height: 35px;
+  height: auto;
   align-items: center;
 }
 
@@ -284,7 +284,7 @@ h2 > span:after {
     rgba(255, 255, 255, 0) 28.32%), #3F7BB8; 
   display: flex;
   margin-top: 20px;
-  height: 35px;
+  height: auto;
   align-items: center;
 }
 
@@ -294,7 +294,7 @@ h2 > span:after {
     rgba(255, 255, 255, 0) 30.39%), #3F7BB8; 
   display: flex;
   margin-top: 20px;
-  height: 35px;
+  height: auto;
   align-items: center;
 }
 
@@ -317,6 +317,13 @@ h2 > span:after {
   position: absolute;
   font-family: Phetsarath;
   font-size: 14px;
+}
+
+
+@media (max-width: 576px){
+  .about_form_input {
+     max-width: 95%;
+  }
 }
 
 .footer {
