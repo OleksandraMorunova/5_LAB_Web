@@ -1,4 +1,4 @@
-html,body {
+body {
   padding: 0;
   overflow-x: hidden;
 }
@@ -72,7 +72,7 @@ carousel-indicators li {
 }
 
 .phone {
-  margin-top: 50px;
+  margin-top: 40px;
   position: relative;
   display: block;
   object-fit: cover;
@@ -264,7 +264,7 @@ h2 > span:after {
     rgba(255, 255, 255, 0) 24.28%), #3F7BB8;  
   margin-top: 20px;
   display: flex;
-  height: auto;
+  height: 35px;
   align-items: center;
 }
 
@@ -274,7 +274,7 @@ h2 > span:after {
     rgba(255, 255, 255, 0) 18.74%), #3F7BB8;
   display: flex;
   margin-top: 20px; 
-  height: auto;
+  height: 35px;
   align-items: center;
 }
 
@@ -284,7 +284,7 @@ h2 > span:after {
     rgba(255, 255, 255, 0) 28.32%), #3F7BB8; 
   display: flex;
   margin-top: 20px;
-  height: auto;
+  height: 35px;
   align-items: center;
 }
 
@@ -294,7 +294,7 @@ h2 > span:after {
     rgba(255, 255, 255, 0) 30.39%), #3F7BB8; 
   display: flex;
   margin-top: 20px;
-  height: auto;
+  height: 35px;
   align-items: center;
 }
 
@@ -313,17 +313,9 @@ h2 > span:after {
 }
 
 .about_form_input {
-  width: 98%;
-  position: absolute;
+  width: 100%;
   font-family: Phetsarath;
   font-size: 14px;
-}
-
-
-@media (max-width: 576px){
-  .about_form_input {
-     max-width: 95%;
-  }
 }
 
 .footer {
@@ -338,10 +330,4 @@ h2 > span:after {
   line-height: 23px;
   font-family: Phetsarath;
   color: #97949B;
-}
-
-@media (max-width: 992px){
-  #text_footer {
-     margin-top: 340px;
-  }
 }
