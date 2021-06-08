@@ -72,6 +72,7 @@ carousel-indicators li {
 }
 
 .phone {
+  margin-top: 50px;
   position: relative;
   display: block;
   object-fit: cover;
